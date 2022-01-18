@@ -1,0 +1,53 @@
+.container {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-areas:
+    "header header header header"
+    "sidebar main main main"
+    "sidebar photo photo button"
+    "footer footer footer footer"
+
+}
+.item {
+    background-color: rgb(156, 135, 173);
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+}
+.header {
+    grid-area: header;
+}
+.sidebar {
+    grid-area: sidebar;
+}
+.main {
+    grid-area: main;
+}
+.footer {
+    grid-area: footer;
+}
+.photo {
+    grid-area: photo;
+    height: 200px;
+    width: 200px;
+
+}
+#buy-button {
+    grid-area: button;
+    color: aliceblue;
+    border-radius: 10px;
+    font-weight: bold;
+    padding: 20px;
+    margin: 1px;
+}
+.sidenav {
+     height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 160px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+     z-index: 1; /* Stay on top */
+     top: 0; /* Stay at the top */
+     left: 0;
+     background-color: #111; /* Black */
+     overflow-x: hidden; /* Disable horizontal scroll */
+     padding-top: 20px;
+    }
